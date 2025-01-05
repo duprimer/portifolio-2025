@@ -1,0 +1,165 @@
+@charset "utf8";
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{
+--cor1:#34353A;
+--cor2:#FFD36E;
+--cor3: #ffffff;
+
+--font-padrão: Anton , serif;
+--font-deli:Abel, serif;
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px
+}
+
+
+
+body{
+    background-color: rgb(61, 61, 61);
+}
+
+
+header>nav>ul{
+    color: #ffffff;
+}
+
+
+nav{
+    margin: auto;
+    background-color:var(--cor1);
+    height: 40px;
+    width: 800px;
+    text-align: center;
+    
+}
+ul{
+    margin: auto;
+    padding: 10px;
+}
+
+li{
+    
+    margin: auto;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+li:hover{
+    background-color: var(--cor2);
+    height: 40px;
+    
+}
+
+li>a{
+    color: var(--cor3);
+    text-decoration: underline;
+    font-family: var(--font-deli);
+}
+
+main{
+    margin: auto;
+    background-color: var(--cor1);
+    height: 2000px;
+    width: 800px;
+    
+}
+
+
+
+
+main>div.apre{
+    height: 500px;
+    width: 800px;
+    background-color:aliceblue;
+    text-align: center;
+    
+
+  
+}
+
+main>div>img{
+    height: 500px;
+    width: 800px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*cards de experiencias*/
+
+h2{
+    font-family: var(--font-deli);
+    color:var(--cor3);
+    padding: 10px;
+}
+
+p{
+    font-family: var(--font-deli);
+    font-size: 1em;
+    color: var(--cor3);
+}
+
+h2#h2ms{
+    text-align: center;
+    padding: 15px;
+    font-family: var(--font-deli);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 0;
+}
